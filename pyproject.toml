@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "frequencia-palavra"
+version = "0.1.0"
+description = ""
+authors = ["Lucas Mateus de Souza"]
+readme = "README.md"
+packages = [{include = "frequencia_palavra"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+matplotlib = "^3.6.1"
+pandas = "^1.5.1"
+numpy = "^1.23.4"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.15.5"
+black = {version = "^22.10.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
